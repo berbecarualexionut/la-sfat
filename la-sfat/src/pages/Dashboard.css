@@ -1,0 +1,87 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.dashboard-form-card {
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 25px;
+    margin: 15px;
+    place-self: center;
+    width: 90%;
+}
+
+.dashboard-text-field {
+    margin: 10px 0 !important;
+    width: 100%;
+}
+
+.dashboard-post {
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 25px;
+    margin: 15px;
+    place-self: center;
+    width: 90%;
+}
+
+.dashboard-post-header {
+    display: flex;
+}
+
+.dashboard-post-info {
+    margin: 0 10px;
+    align-self: center;
+    width: 50%;
+}
+
+.dashboard-post-user {
+    color: #8338EC;
+    font-weight: 600;
+}
+
+.dashboard-post-date {
+    color: #FB5607;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.dashboard-post-actions {
+    width: 50%;
+    text-align: right;
+}
+
+.dashboard-action {
+    color: #8338EC !important;
+}
+
+.dashboard-post-title {
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #2f164f;
+}
+
+.dashboard-post-description {
+    color: #2f164f;
+}
+
+.cancel-button {
+    color: #FB5607 !important;
+    font-weight: 600 !important;
+    margin: 10px !important;
+    border-color: #FB5607 !important;
+}
+
+.save-button {
+    color: white !important;
+    background-color: #8338EC !important;
+    font-weight: 600 !important;
+    margin: 10px 0 !important;
+}
+
+.display-none {
+    display: none;
+}

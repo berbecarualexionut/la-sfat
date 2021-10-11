@@ -1,0 +1,23 @@
+.app-bar {
+    background: white !important;
+    padding: 10px !important;
+    box-shadow: none !important;
+}
+
+.app-bar-image {
+    margin-right: auto;
+}
+
+.app-bar-content {
+    display: flex;
+    align-content: center;
+}
+
+.app-bar-item {
+    margin: 0 5px !important;
+    color: #8338EC !important;
+}
+
+.app-bar-user-image {
+    margin: 0 5px;
+}

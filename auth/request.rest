@@ -1,0 +1,77 @@
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email": "test12cfs1323@domain.com",
+    "password": "somedasdsdadsafsdafsadgasdg"
+}
+
+###
+
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "email": "test12cfs1323@domain.com",
+    "password": "somedasdsdadsafsdafsadgasdg"
+}
+
+###
+DELETE  http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxMmNmczEzMjNAZG9tYWluLmNvbSIsImlhdCI6MTYzMzg5NTU2M30.eT9DWUFEypnMdwEFAFt4lHPuyorgF_M7a7CYEldxGvA"
+}
+
+###
+POST  http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxMmNmczEzMjNAZG9tYWluLmNvbSIsImlhdCI6MTYzMzg5NTU2M30.eT9DWUFEypnMdwEFAFt4lHPuyorgF_M7a7CYEldxGvA"
+}
+
+###
+
+GET  http://localhost:8000/api/tweets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikdlb3JnZSIsImVtYWlsIjoiYUBhLmNvbSIsImlhdCI6MTYzMzkyMjI2NiwiZXhwIjoxNjMzOTIyMzg2fQ.PgBximvfReDu_-X1WQ0bo1lVIsc9wTVuZi7LXZQrhO0
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxMmNzMzIzQGRvbWFpbi5jb20iLCJpYXQiOjE2MzM4MDAxOTN9.FpTob22bn-noAY-vf2uC1Xf1frJO9GPLr7WgCqDYphU"
+}
+
+###
+
+POST http://localhost:8000/api/tweets/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxMmNzMzIzQGRvbWFpbi5jb20iLCJpYXQiOjE2MzM4MTgyOTEsImV4cCI6MTYzMzgxODM1MX0.Z084zSGinDzRG49KSaPxDsqdZdVvvhhVhXNAg4zrpIQ
+
+{
+    "title": "Incendiar",
+    "user": "George",
+    "description": "nimic special"
+}
+###
+
+POST http://localhost:8000/api/tweets/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxMmNzMzIzQGRvbWFpbi5jb20iLCJpYXQiOjE2MzM4MTgyOTEsImV4cCI6MTYzMzgxODM1MX0.Z084zSGinDzRG49KSaPxDsqdZdVvvhhVhXNAg4zrpIQ
+
+{
+    "title": "WOWWW!",
+    "id": "6162d60efffadb0b0309db14",
+    "description": "pacanele345"
+}
+
+
+###
+
+POST http://localhost:8000/api/tweets/delete
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxMmNzMzIzQGRvbWFpbi5jb20iLCJpYXQiOjE2MzM4MTgyOTEsImV4cCI6MTYzMzgxODM1MX0.Z084zSGinDzRG49KSaPxDsqdZdVvvhhVhXNAg4zrpIQ
+
+{
+    "id": "6162d60efffadb0b0309db14"
+}
