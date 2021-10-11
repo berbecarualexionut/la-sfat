@@ -8,7 +8,7 @@ const client = redis.createClient({
 
 // save user token, ttl will be 31 day for each REGEN token
 const addRefreshToken = (token) => {
-    client.set(token, "0", 'EX', 31 * 60 * 60)
+    client.set(token, "0", 'EX', 31 * 24 * 60 * 60)
 }
 
 const deleteRefreshToken = (token, callback) => {
